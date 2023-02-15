@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "Ropa 1",
+      "img": "../assets/Mujer6.jpg",
+      "price": 100,
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+      "stock": 3,
+      "category": "Invierno"
+    },
+    {
+      "id": 2,
+      "name": "Ropa 2",
+      "img": "../assets/Mujer2.jpg",
+      "price": 200,
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+      "stock": 8,
+      "category": "Primavera"
+    },
+    {
+      "id": 3,
+      "name": "Ropa 3",
+      "img": "../assets/Mujer7.jpg",
+      "price": 300,
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+      "stock": 3,
+      "category": "Verano"
+    },
+    {
+      "id": 4,
+      "name": "Ropa 4",
+      "img": "../assets/Mujer5.jpg",
+      "price": 400,
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+      "stock": 5,
+      "category": "Verano"
+    }
+  ]
