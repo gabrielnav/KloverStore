@@ -1,15 +1,15 @@
+import React, { useContext } from "react";
+import { CounterContext } from "../context/CounterContext";
 import { Button } from "@chakra-ui/react";
-import React from "react";
 
 const CartWidget = () => {
+  const { cart } = useContext(CounterContext);
   return (
     <>
-      <div className="cart">
-        <Button size="lg" variant="outline" colorScheme="orange">
-          <span className="material-symbols-outlined">shopping_cart</span>
-          <span>5</span>
-        </Button>
-      </div>
+      <Button colorScheme="gray" size="md" color="#262626">
+        <span className="material-symbols-outlined">shopping_cart</span>
+        <span>{cart}</span>
+      </Button>
     </>
   );
 };

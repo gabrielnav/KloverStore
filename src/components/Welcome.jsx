@@ -1,5 +1,5 @@
 import { Heading, Center, Box, Image } from "@chakra-ui/react";
-import prenda2 from "../assets/Local2.jpg"
+
 
 const Welcome = () => {
   return (
@@ -7,7 +7,7 @@ const Welcome = () => {
       <Center>
         <Box boxSize="xxl">
           <Image
-            src={prenda2}
+            src="https://i.postimg.cc/JnYbP6JQ/Local2.jpg"
             alt="prenda"
           />
         </Box>

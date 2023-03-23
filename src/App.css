@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width {
+    width: 100vw;
+}
+
+.list-decoration{
+    list-style: none;
+    color: white;
+}
+
+.ItemListContainer{
+    min-height: 90vh;
+}
+
+.personal-width{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.itemImage{
+    width: 500px;
+    height: 300px;
+}
+
+.textCardItem {
+    min-height: 120px;
+}
