@@ -1,4 +1,4 @@
- import React from "react";
+ /*import React from "react";
 import { Link } from "react-router-dom";
 import {
   Card,
@@ -13,9 +13,31 @@ import {
   Spacer,
   Flex,
   Button,
+} from "@chakra-ui/react";*/
+import React, { useContext } from "react";
+import { CounterContext } from "../context/CounterContext";
+import { Link } from "react-router-dom";
+import ItemQuantitySelector from "./ItemQuantitySelector";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Image,
+  Stack,
+  Heading,
+  Text,
+  Divider,
+  ButtonGroup,
+  Button,
+  Center,
+  Flex,
+  Box,
+  Spacer,
 } from "@chakra-ui/react";
 
 const ItemList = ({ products }) => {
+  const { counter, setCounter, cart, setCart, cartItems } =
+  useContext(CounterContext);
   return (
     <div className="f-wrap">
       {products.map((product) => (
@@ -44,6 +66,25 @@ const ItemList = ({ products }) => {
                   </Button>
                 ) : (
                   <Link to={`/item/${product.id}`}>
+                     <CardFooter>
+            <ButtonGroup spacing="12">
+              <ItemQuantitySelector stock={product.stock} />
+              <Button
+                onClick={() => {
+                  setCart(cart + counter);
+                  setCounter(0);
+                  if (counter != 0) {
+                    cartItems.push([product.name, product.price, counter]);
+                  } else {
+                    alert("Debe indicar la cantidad");
+                  }
+                }}
+                colorScheme="teal"
+              >
+                Agregar al carrito
+              </Button>
+            </ButtonGroup>
+          </CardFooter>
                     <Button as={Button} colorScheme="teal" size="md" mx="2">
                       Pedir
                     </Button>

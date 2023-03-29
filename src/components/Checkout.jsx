@@ -98,8 +98,7 @@ const Checkout = () => {
     <>
       <Flex justify="center">
         <Heading>
-          Complete los datos. Pronto estará disfrutando con la más ricas
-          empanadas.
+          Complete los datos. 
         </Heading>
       </Flex>
       <br />

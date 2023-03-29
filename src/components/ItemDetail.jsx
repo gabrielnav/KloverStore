@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CounterContext } from "../context/CounterContext";
 import { Link } from "react-router-dom";
-import ItemCount from "./ItemCount";
+import ItemQuantitySelector from "./ItemQuantitySelector";
 import {
   Card,
   CardBody,
@@ -28,12 +28,12 @@ const ItemDetail = ({ product }) => {
         <Card maxW="sm">
           <CardBody>
             <Center>
-            <Image
-              src={product.image}
-              alt={`Imagen de la prenda ${product.name} `}
-              borderRadius="lg"
-              className="itemImage"
-            />
+              <Image
+                src={product.image}
+                alt={`Imagen de la empanada ${product.name} `}
+                borderRadius="lg"
+                className="itemImage"
+              />
             </Center>
             <Stack mt="6" spacing="5">
               <Heading size="md">{product.name}</Heading>
@@ -54,7 +54,7 @@ const ItemDetail = ({ product }) => {
           <Divider />
           <CardFooter>
             <ButtonGroup spacing="12">
-              <ItemCount stock={product.stock} />
+              <ItemQuantitySelector stock={product.stock} />
               <Button
                 onClick={() => {
                   setCart(cart + counter);
