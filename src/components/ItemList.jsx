@@ -67,23 +67,7 @@ const ItemList = ({ products }) => {
                 ) : (
                   <Link to={`/item/${product.id}`}>
                      <CardFooter>
-            <ButtonGroup spacing="12">
-              <ItemQuantitySelector stock={product.stock} />
-              <Button
-                onClick={() => {
-                  setCart(cart + counter);
-                  setCounter(0);
-                  if (counter != 0) {
-                    cartItems.push([product.name, product.price, counter]);
-                  } else {
-                    alert("Debe indicar la cantidad");
-                  }
-                }}
-                colorScheme="teal"
-              >
-                Agregar al carrito
-              </Button>
-            </ButtonGroup>
+            
           </CardFooter>
                     <Button as={Button} colorScheme="teal" size="md" mx="2">
                       Pedir
