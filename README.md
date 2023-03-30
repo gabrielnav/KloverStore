@@ -6,7 +6,7 @@ Una web diseñada para la venta de **INDUMENTARIA FEMENINA** al consumidor final
 
 ## Multimedia
 
-![Video de la Web](./src/assets/giftFinal.mp4)
+![Video de la Web](./src/assets/GiftFinal.gif)
 
 
 ## Librerías utilizadas
