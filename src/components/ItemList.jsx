@@ -1,23 +1,6 @@
- /*import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Image,
-  Stack,
-  Heading,
-  Text,
-  Divider,
-  CardFooter,
-  ButtonGroup,
-  Spacer,
-  Flex,
-  Button,
-} from "@chakra-ui/react";*/
 import React, { useContext } from "react";
 import { CounterContext } from "../context/CounterContext";
 import { Link } from "react-router-dom";
-import ItemQuantitySelector from "./ItemQuantitySelector";
 import {
   Card,
   CardBody,
